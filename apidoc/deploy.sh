@@ -123,7 +123,7 @@ main() {
 initial_deploy() {
   git --work-tree "$deploy_directory" checkout --orphan $deploy_branch
   git --work-tree "$deploy_directory" add --all
-  commit+push
+  #commit+push
 }
 
 incremental_deploy() {
